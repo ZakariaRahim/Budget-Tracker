@@ -81,11 +81,7 @@
             font-size: 25px;
         }
 
-        #footer {
-            background-color: black;
-            opacity: 0.74;
-            background-size: 30%;
-        }
+      
 
         .address {
             background-color: #034294;
@@ -96,11 +92,10 @@
         }
 
         .middle {
-            width: 98%;
-            height: 700px;
-            margin-top: 0vh;
-            /* background-color: pink; */
-
+            width: 80%;
+            height: 560px;
+            /* margin-top:10%; */
+           position:static;
             margin-left: 10%;
             border-style: solid;
             border-color: #C606AF;
@@ -109,38 +104,8 @@
         }
     </style>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // Activate tooltip
-            $('[data-toggle="tooltip"]').tooltip();
 
-            // Select/Deselect checkboxes
-            var checkbox = $('table tbody input[type="checkbox"]');
-            $("#selectAll").click(function () {
-                if (this.checked) {
-                    checkbox.each(function () {
-                        this.checked = true;
-                    });
-                } else {
-                    checkbox.each(function () {
-                        this.checked = false;
-                    });
-                }
-            });
-            checkbox.click(function () {
-                if (!this.checked) {
-                    $("#selectAll").prop("checked", false);
-                }
-            });
-        });
-    </script>
-
-</head>
-
-<body>
-
-
-    <div class="conteiner-fluid">
+    <!-- <div class="conteiner-fluid"> -->
         <div class="middle">
 
             <body>
@@ -218,23 +183,23 @@
                                             <div class="modal-body">					
                                                 <div class="form-group">
                                                     <label>DEPARTMENT</label>
-                                                    <input type="text" class="form-control" >
+                                                    <input type="text" class="form-control" readonly >
                                                 </div>
                                                 <div class="form-group">
                                                     <label>CATEGORY</label>
-                                                    <input type="email" class="form-control">
+                                                    <input type="email" class="form-control" readonly>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>TOTAL PRICE</label>
-                                                    <textarea class="form-control"></textarea>
+                                                    <input type="text" class="form-control" readonly>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>APRROVED BY</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control" readonly>
                                                 </div>		
                                                 <div class="form-group">
                                                         <label>DATE</label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control" readonly>
                                                     </div>				
                                             </div>
                         
@@ -258,16 +223,12 @@
 
     <br>
 
-    <div class="address">
-        <h5>UDS Nav-Campus</h5>
-        <h5>No where to go</h5>
-
-    </div>
-    </div>
+ 
+    <!-- </div> -->
     <script src="js/jquery-slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="css/javas.js"></script>
-</body>
+
 
 </html>
