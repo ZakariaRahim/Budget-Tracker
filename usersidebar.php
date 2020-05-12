@@ -19,19 +19,25 @@
   <div class="collapse navbar-collapse" id="navbarNav" >
     <ul class="navbar-nav " id="list"  >
       <li class="nav-item active" >
-        <a class="nav-link" href="#" style="color:white; cursor:pointer">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="home.php" style="color:white; cursor:pointer">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white">Search Budget</a>
+        <a class="nav-link" href="budget.html" style="color:white">Create Budget</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white">Expenses</a>
+        <a class="nav-link" href="revenue.html" style="color:white">Enter Revenue</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#" style="color:white">Display Revenue</a>
+      <a class="nav-link" href="displayrevenue.php" style="color:white">Display Revenue</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="signup.html" style="color:white">Add User</a>
+      <a class="nav-link" href="expenses.php" style="color:white">Expenses</a>
+      </li>
+      <!-- <li class="nav-item">
+      <a class="nav-link" href="displaybudget.php" style="color:white">Dislpay Budget</a>
+      </li> -->
+      <li class="nav-item">
+      <a class="nav-link" href="#" style="color:white">Reports</a>
       </li>
       <li class="nav-item">
       <a class="nav-link" href="login.html" style="color:white">Logout</a>
