@@ -1,108 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Budget Approval</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="../asana/fontawesome-free-5.10.1-web/css/all.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css" type="text/css">
-    <style type="text/css">
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            background-color: #eee;
-            margin: auto;
-            width: 100%;
-            height: 100%;
-        }
-
-        .contain {
-            width: 100%;
-            min-height: 100vh;
-            margin: auto;
-        }
-
-        .top_bg {
-            width: 100%;
-            height: 10vh;
-            background-color: #02326F;
-        }
-
-        .side_bar {
-            width: 300px;
-            height: 103%;
-            background-color: #02326F;
-            margin-left: 0.1%;
-            float: left;
-            position: absolute;
-            border-style: solid;
-            border-color: #C606AF;
-            color: white;
-            clear: both;
-
-
-        }
-
-        .side_bar ul {
-            padding-top: 50px;
-        }
-
-        .side_bar li {
-            border: 1px solid #034294;
-            padding: 20px 0px;
-            padding-left: 20px;
-            list-style: none;
-        }
-
-        .side_bar li:hover {
-            background-color: #285896;
-            background-color: #E27706;
-        }
-
-        .side_bar .fa {
-            font-size: 25px;
-            color: #fff;
-        }
-
-        .side_bar span {
-            color: #fff;
-            text-transform: capitalize;
-            padding-left: 15px;
-            font-size: 25px;
-        }
-
-      
-
-        .address {
-            background-color: #034294;
-            text-align: center;
-            height: 60%;
-            font-size: 5px;
-
-        }
-
-        .middle {
-            width: 80%;
-            height: 560px;
-            position:static;
-            margin-left: 10%;
-            border-style: solid;
-            border-color: cornflowerblue;
-
-
-        }
-    </style>
-
+ <?php
+    include_once '../private/init.php';
+    include_once SHARED_PATH .'/header.php';
+    
+    ?>
 
     <!-- <div class="conteiner-fluid"> -->
         <div class="middle">
@@ -228,16 +128,7 @@
     </div>
     </div>
 
-
-
-    <br>
-
- 
-    <!-- </div> -->
-    <script src="js/jquery-slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="css/javas.js"></script>
-
-
-</html>
+<?php
+    include_once SHARED_PATH .'/footer.php';
+    
+    ?>
