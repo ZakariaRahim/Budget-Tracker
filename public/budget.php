@@ -1,49 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Budget</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="../asana/fontawesome-free-5.10.1-web/css/all.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css" type="text/css">
-
-    <style>
-    .signup-form{
-        width: 70%;
-        height: 70%;
-        background-color:#2dd9;
-        margin-left: 16%;
-        margin-top: 5%;   
-        /* transform: rotate(20deg) */
-       
-    }
-    .form-group{
-        width:50%;
-        margin-left: 25%;
-
-
-    }
-    .btn btn-success btn-lg btn-block{
-        color: #000;
-    }
-    </style>
-    <script>
-        function total() {
-            var UnitPrice= document.getElementById("UnitPrice");
-    var Quantity=document.getElementById("Quantity");
-    var totalprice=document.getElementById("TotalPrice");
-    totalprice=UnitPrice.value * Quantity.value;
-
-        }
-
-   
-    </script>
-</head>
-<body>
+    <?php
+    include_once '../private/init.php';
+    include_once SHARED_PATH .'/header.php';
+    
+    ?>
    <div class="container-fluid">
 <div class="signup-form">
     <form action="budget.html" method="post" autocomplete="off">
@@ -97,10 +56,16 @@
       
   </div>   
 </div>
-    
-<script src="js/jquery-slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="css/javas.js"></script>
-</body>
-</html>
+
+<script>
+  function total () {
+    var UnitPrice = document.getElementById('UnitPrice')
+    var Quantity = document.getElementById('Quantity')
+    var totalprice = document.getElementById('TotalPrice')
+    totalprice = UnitPrice.value * Quantity.value
+  }
+</script>
+
+<?php 
+
+include_once SHARED_PATH . '/footer.php';
