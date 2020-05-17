@@ -14,13 +14,13 @@
         <a class="nav-link" href="#" style="color:white; cursor:pointer">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white">Transactions</a>
+        <a class="nav-link" href="#" style="color:white">Search Budget</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" style="color:white">Expenses</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#" style="color:white">Source of Revenue</a>
+      <a class="nav-link" href="#" style="color:white">Display Revenue</a>
       </li>
       <li class="nav-item">
       <a class="nav-link" href="signup.html" style="color:white">Add User</a>

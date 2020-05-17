@@ -1,8 +1,10 @@
+
     <?php
     include_once '../private/init.php';
     include_once SHARED_PATH .'/header.php';
     
     ?>
+
    <div class="container-fluid">
 <div class="signup-form">
     <form action="budget.html" method="post" autocomplete="off">
