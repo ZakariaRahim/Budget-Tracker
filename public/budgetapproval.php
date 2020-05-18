@@ -1,11 +1,12 @@
-
-
-    <?php
+  <?php
     include_once '../private/init.php';
     include_once SHARED_PATH .'/header.php';
+
     
     ?>
+    <link rel="stylesheet" href="../styles/budgetapproval.css">
     <!-- <div class="conteiner-fluid"> -->
+        <?php include 'sidebar.php' ?>
         <div class="middle">
 
             <body>

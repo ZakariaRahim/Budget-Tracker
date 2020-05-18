@@ -17,16 +17,16 @@
         <a class="nav-link" href="#" style="color:white">Search Budget</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color:white">Expenses</a>
+        <a class="nav-link" href="expenses.php" style="color:white">Expenses</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#" style="color:white">Display Revenue</a>
+      <a class="nav-link" href="displayrevenue.php" style="color:white">Display Revenue</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="signup.html" style="color:white">Add User</a>
+      <a class="nav-link" href="signup.php" style="color:white">Add User</a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="login.html" style="color:white">Logout</a>
+      <a class="nav-link" href="login.php" style="color:white">Logout</a>
       </li>
     </ul>
   </div>

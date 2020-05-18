@@ -3,6 +3,7 @@
     include_once SHARED_PATH .'/header.php';
     
     ?>
+    <link rel="stylesheet" href="../styles/login.css">
     <div class="container-fluid">
         <div class="login-form">
             <h4>Please Enter Your Details to Login</h4>
@@ -24,10 +25,10 @@
                     </div>
 
                     <div class="footer">
-                        <h5 style="color: black; text-align: center;"> Copyright &copy; 2020. All Right Reserved</h5>
-                        <br>
-                        <h5 style="text-align: center;
-                    color: black;">Abdul Somed Safianu Project Work</h5>
+                    <?php
+    include_once SHARED_PATH .'/footer.php';
+    
+    ?>
                     </div>
 
             </form>
@@ -38,7 +39,4 @@
     </div>
   
 
-    <?php
-    include_once SHARED_PATH .'/footer.php';
-    
-    ?>
+   

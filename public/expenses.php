@@ -3,6 +3,7 @@
     include_once SHARED_PATH .'/header.php';
     
     ?>
+    <link rel="stylesheet" href="..\styles\userdash.css">
 <div class="header">
   <h1>BUDGET TRACKING SYSTEM  DASHBOARD</h1>
 </div>

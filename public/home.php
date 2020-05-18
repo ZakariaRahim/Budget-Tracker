@@ -13,13 +13,7 @@
   </div>
   <div class="middlepage">
   <?php include 'displaybudget.php' ?>
-  <?php
-//    include 'expenses.php' ?>
   </div> 
-
-  <div class="footer">
-<?php  include 'footer.php' ?>
-  </div>
 </div>
 
 <?php

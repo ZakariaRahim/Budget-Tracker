@@ -3,7 +3,7 @@
     include_once SHARED_PATH .'/header.php';
     
     ?>
-
+<link rel="stylesheet" href="../styles/userdash.css">
     <!-- <div class="conteiner-fluid"> -->
         <div class="middle">
 

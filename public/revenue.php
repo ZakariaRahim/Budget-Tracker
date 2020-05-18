@@ -3,6 +3,7 @@
     include_once SHARED_PATH .'/header.php';
     
     ?>
+    <link rel="stylesheet" href="style.css">
 <div class="container-fluid">
     <div class="signup-form">
         <form action="budget.html" method="post" autocomplete="off">
@@ -35,17 +36,14 @@
             </div>
         </form>
      <div id="footer">
-          <h5 style="color: black; text-align: center;"> Copyright &copy; 2020. All Right Reserved</h5>
-          <br>
-          <h5 style="text-align: center;
-          color: black;">Abdul Somed Safianu Project Work</h5>
-          
+     <?php
+    include_once SHARED_PATH .'/footer.php';
+    
+    ?>
+  
       </div>   
 
 
 </div>
    
-     <?php
-    include_once SHARED_PATH .'/footer.php';
-    
-    ?>
+  
