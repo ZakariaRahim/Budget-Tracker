@@ -9,8 +9,6 @@
 <div class="container-fluid">
 
 <div class="sidebapage">
-<?php include 'sidebar.php' ?>
-  </div>
   <div class="middlepage">
   <?php include 'budgetapproval.php' ?>
   </div> 

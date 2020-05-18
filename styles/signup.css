@@ -1,0 +1,45 @@
+.container-fluid {
+    background-color: brown;
+    height: 100%;
+    width: 70%;
+    border-radius: 5%;
+  }
+  .signup-form {
+    width: 50%;
+    height: 80%;
+    background-color: rgba(73, 1, 46, 0.6);
+    margin-left: 25%;
+    margin-top: 5%;
+    margin: center;
+    border-radius: 5%;
+    border-color: darkblue;
+  }
+  
+  .form-group {
+    width: 50%;
+    /* height: 70%; */
+    margin-left: 25%;
+    /* margin:center; */
+    margin-top: 5%;
+  }
+  
+  .btn btn-success btn-lg btn-block {
+    color: #000;
+  }
+  
+  h4 {
+    margin-left: 25%;
+    margin-top: 15%;
+    color: #ffffff;
+    font-size: 100%;
+  }
+  
+  .rap-content {
+    margin-top: 30%;
+  }
+  
+  .footer {
+    margin-top: 20%;
+    color:white;
+  }
+  
