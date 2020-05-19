@@ -1,42 +1,55 @@
     <?php
     include_once '../private/init.php';
+    $title = "Singup";
     include_once SHARED_PATH .'/header.php';
+
+
+    if(isset($_POST['submit']))
+    {
+        $id = $_POST['user_id'] ?? '';
+        $email = $_POST['email'] ?? '';
+        $password1 = $_POST['password1'] ?? '';
+        $password2 = $_POST['password2'] ?? '';
+
+
+        $user = new User($id, $email);
+        $user->user_type = 1;
+        
+
+        if($password1 == $password2)
+        {
+            $user->set_password($password1);
+        }
+        $user->create_user();
+
+
+    }
     
     ?>
-    <link rel="stylesheet" href="../styles/signup.css">
     <div class="container-fluid">
-        <div class="signup-form">
-            <h4>Please Enter Your Details to Signup</h4>
+        <div class="signin-form">
+            <p class="login-title">Sign user up</p>
+            <?php var_dump($error); ?>
             <form action="signup.php" method="post">
-                <div class="rap-content">
-                    <div class="form-group">
-                     
-                        <input type="text" class="form-control" placeholder="Enter User Name">   <i class="fas fa-sign-in"></i>
-                    </div>
-                    <div class="form-group">
-                     
-                            <input type="email" class="form-control" placeholder="Email">  
-                        </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" name="pass" placeholder="Password"
-                            required="required">
-                    </div>
-                    <div class="form-group">
-                            <input type="password" class="form-control" name="pass-confirm" placeholder="Retype Password"
-                                required="required">
-                        </div>
-    
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-lg btn-block" style="background-color:black"
-                            name="bsubmit">Signup </button>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Userid" required name="user_id">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required name="email">  
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password"
+                        required name="password1">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Retype Password"
+                        required name="password2">
+                </div>
 
-                    </div>
-
-                    <div class="footer">
-                    <?php
-    include_once SHARED_PATH .'/footer.php';
-    ?>
-                    </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-login btn-block" 
+                        name="submit">Signup </button>
+                </div>
 
             </form>
 
