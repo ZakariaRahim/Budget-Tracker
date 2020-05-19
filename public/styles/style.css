@@ -1,9 +1,5 @@
 /* admin dashboard styles */
-.container-fluid {
-  height: auto;
-  width: 100%;
-  background-color: white;
-}
+
 .header {
   background-color: dimgrey;
   height: 80px;
@@ -34,7 +30,6 @@ h1 {
   text-shadow: chartreuse;
 }
 
-
 /* revenue page styles */
 .container-fluid {
   height: 100%;
@@ -56,4 +51,3 @@ h1 {
 .btn btn-success btn-lg btn-block {
   color: #000;
 }
-

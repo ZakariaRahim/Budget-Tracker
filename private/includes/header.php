@@ -8,12 +8,12 @@
     <title><?= $title; ?></title>
     <link rel="stylesheet" href="../../public/css/bootstrap.min.css" type="text/css">
     
-    <link href="../../public/css/fontawesome-free-5.10.1-web/css/all.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../public/style/budget.css">
-    <link rel="stylesheet" href="../../public/style/budgetapproval.css">
-    <link rel="stylesheet" href="../../public/style/login.css">
-    <link rel="stylesheet" href="../../public/style/signup.css">
-    <link rel="stylesheet" href="../../public/style/userdash.css">
+    <link href="../../public/css/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../public/styles/budget.css">
+    <link rel="stylesheet" href="../../public/styles/budgetapproval.css">
+    <link rel="stylesheet" href="../../public/styles/index.css">
+    <link rel="stylesheet" href="../../public/styles/signup.css">
+    <link rel="stylesheet" href="../../public/styles/userdash.css">
     <style>
     </style>
 </head>
