@@ -13,7 +13,7 @@
     
     ?>
     <div class="container">
-        <div class="-form">
+        <div class="login-form">
             <p class='login-title'>login here</p>
             <?php if(!empty($error))var_dump($error); ?>
             <form action="index.php" method="post">
