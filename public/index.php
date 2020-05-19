@@ -12,11 +12,12 @@
     }
     
     ?>
-    <div class="container-fluid">
-        <div class="login-form">
-            <?php var_dump($error); ?>
+    <div class="container">
+        <div class="-form">
+            <p class='login-title'>login here</p>
+            <?php if(!empty($error))var_dump($error); ?>
             <form action="index.php" method="post">
-                <p class='login-title'>login here</p>
+                
                 <div class="form-group">
                     <input type="text" class="form-control"
                     name="user_id" placeholder="UserId" required>
@@ -35,6 +36,5 @@
 
     </div>
   
-<?php    //include_once SHARED_PATH .'/footer.php';  ?>
-           
+
    

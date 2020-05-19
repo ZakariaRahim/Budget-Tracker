@@ -26,10 +26,10 @@
     }
     
     ?>
-    <div class="container-fluid">
-        <div class="signin-form">
+    <div class="container">
+        <div class="login-form">
             <p class="login-title">Sign user up</p>
-            <?php var_dump($error); ?>
+            <?php if(!empty($error))var_dump($error); ?>
             <form action="signup.php" method="post">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Enter Userid" required name="user_id">
