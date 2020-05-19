@@ -7,10 +7,10 @@
     <div class="container-fluid">
         <div class="login-form">
             
-            <form action="Login.html" method="post">
+            <form action="login.php" method="post">
                 <p class='login-title'>login here</p>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="UserId">   <i class="fas fa-sign-in"></i>
+                    <input type="text" class="form-control" placeholder="UserId" required>   <i class="fas fa-sign-in"></i>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" name="department" placeholder="Password"
