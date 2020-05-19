@@ -57,11 +57,17 @@ $dsn = [
     "host"=>"localhost",
     "username"=>"root",
     "password"=>"",
-    "dbname"=>"project"
+    "dbname"=>"somedproject"
 
 ];
 $pdoHelper = new PDOHelper($dsn);
 $db = new PdoWrapper($dsn);
+
+$db->setErrorLog(true);
+
+$error = [];
+
+
 
 
 
