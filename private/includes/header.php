@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../../public/styles/budget.css">
     <link rel="stylesheet" href="../../public/styles/budgetapproval.css">
     <link rel="stylesheet" href="../../public/styles/index.css">
-    <link rel="stylesheet" href="../../public/styles/signup.css">
     <link rel="stylesheet" href="../../public/styles/userdash.css">
     <style>
     </style>
