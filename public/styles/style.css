@@ -1,0 +1,36 @@
+#list li {
+  margin-left: 5%;
+  width: 180px;
+  border-color: red;
+}
+#list li:hover {
+  background: blue;
+  color: pink;
+}
+.footer {
+  height: 100px;
+  background: darkslategrey;
+}
+h1 {
+  color: white;
+  margin-left: 20%;
+  text-shadow: 10%;
+  text-shadow: chartreuse;
+}
+
+/* revenue page styles */
+
+.signup-form {
+  width: 70%;
+  height: 70%;
+  background-color: #2dd9;
+  margin-left: 16%;
+  margin-top: 5%;
+}
+.form-group {
+  width: 50%;
+  margin-left: 25%;
+}
+.btn btn-success btn-lg btn-block {
+  color: #000;
+}
