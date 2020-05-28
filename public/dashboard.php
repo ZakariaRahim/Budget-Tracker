@@ -1,4 +1,5 @@
 <?php 
+
   include_once '../private/init.php';
   $title = "Dashboard";
   include_once SHARED_PATH .'/header.php';
@@ -63,3 +64,4 @@
 
 <?php 
 include_once SHARED_PATH . '/footer.php';
+

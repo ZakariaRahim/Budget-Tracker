@@ -12,6 +12,7 @@
     }
     
     ?>
+    <link rel="stylesheet" href="styles/index.css">
     <div class="container">
         <div class="login-form">
             <p class='login-title'>login here</p>
