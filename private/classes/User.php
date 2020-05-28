@@ -42,10 +42,7 @@ class User{
     {
         global $db;
         $result = $db->select('users' , [], ['user_id' => $id])->aResults[0];
-        // $db->showQuery();
-        // var_dump($result);
-        // die();
-
+       
         if(!empty($result))
         {
             if(password_verify($pass, $result['password'])){

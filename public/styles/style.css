@@ -34,3 +34,35 @@ h1 {
 .btn btn-success btn-lg btn-block {
   color: #000;
 }
+
+.budget_tile {
+  padding: 50px;
+  text-align: center;
+}
+
+.tile {
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 700;
+  font-size: large;
+  border-radius: 20px;
+}
+
+.tile_expence {
+  background-color: rgb(240, 128, 128);
+}
+
+.tile_balance {
+  background-color: rgb(50, 241, 108);
+}
+
+.tile_revenue {
+  background-color: rgb(186, 240, 60);
+}
+
+.dashboard_area-title {
+  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}

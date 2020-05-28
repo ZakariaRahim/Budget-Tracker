@@ -43,7 +43,7 @@
                                     <a href="#editEmployeeModal" class="View" data-toggle="modal"> 
                                     <input type="submit" name="approve" class="btn btn-info" value="Edit"></a> 
                                         <input type="submit" name="decline" class="btn btn-danger" value="Cancel">
-                                        <!-- <a href="#editEmployeeModal" class="View" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="VIEW"><i class="fas fa-eye 5x"></i></a> -->
+                                        
                                     </td>
 
                                     <!-- STATIC VALUES FOR TESTING SAKE -->
