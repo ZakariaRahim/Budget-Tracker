@@ -60,4 +60,11 @@ class User{
 
     }
 
+    public static function requireLogin(){
+        if(empty($_SESSION['user'])){
+            redirect_to(url_for('/index.php'));
+        }
+        
+    }
+
 }

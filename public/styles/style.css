@@ -66,3 +66,65 @@ h1 {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
+/* expenses page styling */
+
+.expence-area {
+  width: 50%;
+  margin: 100px auto;
+  border: 1px solid rgb(182, 63, 63);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.expence-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.expence-area .form-control {
+  border: 1px solid rgb(182, 63, 63);
+}
+.expence-area .form-control:focus {
+  outline: none;
+}
+
+/* revenue page styling */
+
+.revenue-area {
+  width: 50%;
+  margin: 100px auto;
+  border: 1px solid rgb(54, 231, 54);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.revenue-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid rgb(54, 231, 54);
+}
+
+.revenue-area .form-control {
+  border: 1px solid rgb(54, 231, 54);
+}
+.revenue-area .form-control:focus {
+  outline: none;
+}
+
+.revenue-area .btn {
+  border: 1px solid rgb(54, 231, 54);
+  color: rgb(54, 231, 54);
+}
+
+.revenue-area .btn:hover {
+  background-color: rgb(54, 231, 54);
+  color: white;
+}

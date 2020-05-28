@@ -7,19 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="<?php echo  url_for('/dashboard.php'); ?>">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Enter Expense</a>
+        <a class="nav-link" href="<?php echo url_for('/expenses.php'); ?>">Enter Expense</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Enter Revenue</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">Display Revenue</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">Expenses</a>
+        <a class="nav-link" href="<?php echo url_for('/revenue.php'); ?>">Enter Revenue</a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="#">Reports</a>
