@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2020 at 01:20 PM
+-- Generation Time: May 29, 2020 at 08:51 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -21,6 +21,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `somedproject`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `budget`
+--
+
+CREATE TABLE `budget` (
+  `id` int(11) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `cost` decimal(10,2) NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `author` varchar(255) NOT NULL,
+  `type` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `budget`
+--
+
+INSERT INTO `budget` (`id`, `description`, `cost`, `date`, `author`, `type`) VALUES
+(1, 'repair a car', '-100.00', '2020-05-28 10:20:48', 'fms/1111/11', 'expense'),
+(2, 'student dues', '500.00', '2020-05-28 10:22:35', 'fms/1111/11', 'revenue'),
+(3, 'buy a new house', '-200000.00', '2020-05-28 11:25:12', 'fms/1111/11', 'expense'),
+(4, 'girl friend food', '-100.00', '2020-05-29 18:42:05', 'fms/1111/11', 'expense'),
+(5, 'get fund', '99999999.99', '2020-05-29 18:42:32', 'fms/1111/11', 'revenue'),
+(6, '', '0.00', '2020-05-29 18:45:30', 'fms/1111/11', 'revenue'),
+(7, '', '0.00', '2020-05-29 18:46:03', 'fms/1111/11', 'revenue'),
+(8, '', '0.00', '2020-05-29 18:46:39', 'fms/1111/11', 'expense');
 
 -- --------------------------------------------------------
 
@@ -48,6 +77,12 @@ INSERT INTO `users` (`id`, `user_id`, `email`, `user_type`, `password`) VALUES
 --
 
 --
+-- Indexes for table `budget`
+--
+ALTER TABLE `budget`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -56,6 +91,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `budget`
+--
+ALTER TABLE `budget`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
