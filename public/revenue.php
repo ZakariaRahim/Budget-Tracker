@@ -12,7 +12,7 @@
         $cost = $_POST['cost'] ?? '';
         $author = $_SESSION['user']['user_id'];
 
-        // an expense cost should be negative
+        // a revenue cost should not be negative
 
         if(Budget::addRevenue($decription, $cost, $author))
             echo "<script>confirm('Data added...')</script>";
@@ -27,12 +27,12 @@
             <form action="revenue.php" method="post">
                 <div class="form-group">
                     <label for="title">Revenue Description</label>
-                    <input type="text" id="title" class="form-control" name="title">
+                    <input type="text" id="title" class="form-control" name="title" required="">
                 </div>
 
                 <div class="form-group">
                     <label for="cost">Revenue Amount</label>
-                    <input type="number" id="cost" class="form-control" name="cost"> 
+                    <input type="number" id="cost" class="form-control" name="cost" required=""> 
                 </div>
 
                 <div class="form-group">

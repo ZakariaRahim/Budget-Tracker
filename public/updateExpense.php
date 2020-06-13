@@ -8,20 +8,29 @@
         header('location: index.php');
     }
 
+
+    if($_GET['id'] != ''){
+        $data = Budget::findBudget(trim($_GET['id']));
+        // var_dump($data);
+    }else{
+        redirect_to(url_for('/dashboard.php'));
+    }
+
     if(isset($_POST['add'])){
         $decription = $_POST['title'] ?? '';
         $cost = $_POST['cost'] ?? '';
         $author = $_SESSION['user']['user_id'];
+        $id = $_POST['id'] ;
 
         // an expense cost should be negative
 
         if(substr($cost, 0,1) != '-')
             $cost = -$cost;
 
-        if(Budget::addExpense($decription, $cost, $author))
-            echo "<script>confirm('Data added...')</script>";
+        if(Budget::updateExpense($id, $decription, $cost, $author))
+            echo "<script>confirm('Data updated...')</script>";
         else 
-            echo "<script>confirm('Data not added...')</script>"; 
+            echo "<script>confirm('Data not updated...')</script>"; 
     }
 
 
@@ -30,16 +39,17 @@
 
     <div class="container">
         <div class="expence-area">
-        <p class="expence-title">Add expence</p>
-            <form action="expenses.php" method="post">
+        <p class="expence-title">Update Expense</p>
+            <form action="updateExpense.php" method="post">
+                <input type="text" name= 'id' hidden="" value="<?= $data['id'] ?>">
                 <div class="form-group">
                     <label for="title">Expense Description</label>
-                    <input type="text" id="title" class="form-control" name="title" required>
+                    <input type="text" id="title" class="form-control" name="title" required value="<?php echo $desc =  $data['description'] ?? '' ?>">
                 </div>
 
                 <div class="form-group">
                     <label for="cost">Expense Cost</label>
-                    <input type="number" id="cost" class="form-control" name="cost" required> 
+                    <input type="number" id="cost" class="form-control" name="cost" required value="<?php echo $cost =  -$data['cost'] ?? '' ?>"> 
                 </div>
 
                 <div class="form-group">
