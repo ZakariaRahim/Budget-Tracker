@@ -1,37 +1,47 @@
 /* budget page styles */
 .container-fluid {
-    height: 100%;
-    width: 100%;
-    background-color: lightslategray;
-  }
-  
+  height: 100%;
+  width: 100%;
+  background-color: lightslategray;
+}
+
 .signup-form {
-    width: 70%;
-    height: 70%;
-    background-color: #2dd9;
-    margin-left: 16%;
-    margin-top: 1%;
-   box-shadow: #000;
-  }
-  .form-group {
-    width: 50%;
-    margin-left: 25%;
-  }
-  .btn btn-success btn-lg btn-block {
-    color: #000;
-  }
-  .sidebar-content {
-    /* width: 20%; */
-    color: white;
-    /* border:70% */
-  }
-  #list li {
-    margin-left: 5%;
-    width: 160px;
-    border-color: red;
-  }
-  #list li:hover {
-    background: blue;
-    color: pink;
-  }
-  
+  width: 70%;
+  height: 70%;
+  background-color: #2dd9;
+  margin-left: 16%;
+  margin-top: 1%;
+  box-shadow: #000;
+}
+.form-group {
+  width: 50%;
+  margin-left: 25%;
+}
+.btn btn-success btn-lg btn-block {
+  color: #000;
+}
+.sidebar-content {
+  /* width: 20%; */
+  color: white;
+  /* border:70% */
+}
+#list li {
+  margin-left: 5%;
+  width: 160px;
+  border-color: red;
+}
+#list li:hover {
+  background: blue;
+  color: pink;
+}
+
+#form1_container {
+  width: 50%;
+  margin: 100px auto;
+}
+
+#form1_container .form-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}

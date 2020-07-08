@@ -16,7 +16,7 @@
         <a class="nav-link" href="<?php echo url_for('/revenue.php'); ?>">Enter Revenue</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#">Reports</a>
+        <a class="nav-link " href="<?php echo url_for('/report.php'); ?>">Reports</a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="<?php echo url_for('/logout.php') ?>">logout</a>

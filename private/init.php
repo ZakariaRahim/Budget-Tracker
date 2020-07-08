@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Mahmud Suleman Sheikh Wunnam
@@ -21,30 +22,42 @@ $public_end = strpos($_SERVER['SCRIPT_NAME'], '/public') + 7;
 $doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
 define("WWW_ROOT", $doc_root);
 
-function url_for($script_path){
-    if($script_path[0] != '/'){
+function url_for($script_path)
+{
+    if ($script_path[0] != '/') {
         $script_path = "/" . $script_path;
     }
-    return WWW_ROOT.$script_path;
+    return WWW_ROOT . $script_path;
 }
 //
 //echo $public_end;
 //die();
 
-function u($string=""){return urlencode($string);}
+function u($string = "")
+{
+    return urlencode($string);
+}
 
-function raw_u($string=""){return rawurlwncode($string);}
+function raw_u($string = "")
+{
+    return rawurlwncode($string);
+}
 
-function h($string=""){return htmlspecialchars($string);}
+function h($string = "")
+{
+    return htmlspecialchars($string);
+}
 
-function redirect_to($location){
-    return header('Location: '.$location);
+function redirect_to($location)
+{
+    return header('Location: ' . $location);
 }
 
 
 //include_once 'classes/User.php';
 //include_once 'classes/Database.php';
-function classes($class){
+function classes($class)
+{
     include 'classes/' . $class . ".php";
 }
 spl_autoload_register('classes');
@@ -54,10 +67,10 @@ $errors = [];
 $current_trimester = 2;
 
 $dsn = [
-    "host"=>"localhost",
-    "username"=>"root",
-    "password"=>"",
-    "dbname"=>"somedproject"
+    "host" => "localhost",
+    "username" => "root",
+    "password" => "",
+    "dbname" => "somedproject"
 
 ];
 $pdoHelper = new PDOHelper($dsn);
@@ -67,7 +80,5 @@ $db->setErrorLog(true);
 
 $error = [];
 
-
-
-
-
+// echo 'hello';
+// die();
